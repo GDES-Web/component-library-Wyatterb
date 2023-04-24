@@ -1,0 +1,53 @@
+// Default button styles
+$button-background-color: #007bff;
+$button-text-color: #fff;
+$button-border-radius: 0.25rem;
+$button-font-size: 1rem;
+$button-transition: background-color 0.3s ease;
+$button-padding: 5px;
+
+// Button hover and active states
+$button-hover-background-color: #0069d9;
+$button-hover-text-color: #fff;
+$button-active-background-color: #005cbf;
+$button-active-text-color: #fff;
+
+// Small button style
+$small-button-padding: 0.25rem 0.5rem;
+$small-button-font-size: 0.75rem;
+
+// Wide button style
+$wide-button-padding: 0.5rem 2rem;
+
+// Button component
+.btn {
+  background-color: $button-background-color;
+  border: none;
+  border-radius: $button-border-radius;
+  color: $button-text-color;
+  cursor: pointer;
+  font-size: $button-font-size;
+  padding: $button-padding;
+  transition: $button-transition;
+
+  &:hover {
+    background-color: $button-hover-background-color;
+    color: $button-hover-text-color;
+  }
+
+  &:active {
+    background-color: $button-active-background-color;
+    color: $button-active-text-color;
+  }
+
+  // Small button variant
+  &.btn-small {
+    padding: $small-button-padding;
+    font-size: $small-button-font-size;
+  }
+
+  // Wide button variant
+  &.btn-wide {
+    padding: $wide-button-padding;
+  }
+}
