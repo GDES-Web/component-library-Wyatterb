@@ -1,18 +1,27 @@
-.btn-fade-in {
-  background-color: #4CAF50;
+.btn {
+  background-color: #007bff;
   border: none;
-  color: white;
-  padding: 16px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
+  border-radius: 0.25rem;
+  color: #fff;
   cursor: pointer;
-  transition: opacity 0.5s ease-in-out;
+  font-size: 1rem;
+  padding: 5px;
+  transition: background-color 0.3s ease;
 }
-.btn-fade-in:hover {
-  background-color: #3e8e41;
+.btn:hover {
+  background-color: #0069d9;
+  color: #fff;
+}
+.btn:active {
+  background-color: #005cbf;
+  color: #fff;
+}
+.btn.btn-small {
+  padding: 0.25rem 0.5rem;
+  font-size: 0.75rem;
+}
+.btn.btn-wide {
+  padding: 0.5rem 2rem;
 }
 
 /*# sourceMappingURL=style.css.map */
